@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>My first Form</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <div>
+      <label for="url">Enter URL</label>
+      <input type="text" id="url" placeholder="www.youtube.com" required />
+      <br />
+
+      <input type="button" id="btn1" value="Submit" />
+    </div>
+
+    <div id="videoContainer">
+      <script>
+        const youtube = document.getElementById("videoContainer");
+        const button = document.getElementById("btn1");
+
+        function addvideo() {
+          const urlInput = document.getElementById("url").value;
+          const youtubeUrl = "https://www.youtube.com/embed/" + urlInput;
+          videoContainer.src = youtubeUrl;
+
+          const iframe = document.createElement("iframe");
+          iframe.setAttribute("width", "320");
+          iframe.setAttribute("height", "320");
+          iframe.setAttribute("title", "Youtube Video Player");
+          iframe.setAttribute("src", youtubeUrl);
+          iframe.setAttribute(
+            "allow",
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          );
+          videoContainer.appendChild(iframe);
+        }
+        button.addEventListener("click", addvideo);
+      </script>
+    </div>
+    <main>
+      <img src="https://picsum.photos/id/236/1000/500" class="slide" alt="" />
+      <img src="https://picsum.photos/id/237/1000/500" class="slide" alt="" />
+      <img src="https://picsum.photos/id/238/1000/500" class="slide" alt="" />
+    </main>
+    <div class="nav"></div>
+
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
