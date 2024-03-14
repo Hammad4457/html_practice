@@ -2,11 +2,16 @@
   <head>
     <title>My first Form</title>
     <link rel="stylesheet" href="custom.css" />
+    
   </head>
   <body>
-    <div>
+    <div class="page" >
+    <div class="input">
       <label for="url">Enter URL</label>
       <input type="text" id="url" placeholder="www.youtube.com" required />
+      <label2 for="info" id="info">Information</label2>
+      <label2 for="Contact" id="Contact">Contact Us</label2>
+      
       <br />
 
       <input type="button" id="btn1" value="Submit" />
@@ -23,8 +28,8 @@
           videoContainer.src = youtubeUrl;
 
           const iframe = document.createElement("iframe");
-          iframe.setAttribute("width", "320");
-          iframe.setAttribute("height", "320");
+          iframe.setAttribute("width", "303.5");
+          iframe.setAttribute("height", "150");
           iframe.setAttribute("title", "Youtube Video Player");
           iframe.setAttribute("src", youtubeUrl);
           iframe.setAttribute(
@@ -41,11 +46,13 @@
       <img src="https://picsum.photos/id/237/1000/500" class="slide" alt="" />
       <img src="https://picsum.photos/id/238/1000/500" class="slide" alt="" />
     </main>
-    <div class="nav"></div>
+    <div class="nav">
 
-    <button onclick="goPrev()">Prev</button>
-    <button onclick="goNext()">Next</button>
+    <button id="btnPrev" onclick="goPrev()">Prev</button>
+    <button id="btnNext" onclick="goNext()">Next</button>
 
     <script src="app.js"></script>
+  </div>
+  </div>
   </body>
 </html>
