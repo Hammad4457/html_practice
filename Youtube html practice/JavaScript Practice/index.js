@@ -138,6 +138,12 @@ while(i>0){             //ulti ginti
 //     console.log(data);
 // }
 
+//for each
+// const arr = [1, 1, 2, 1, 1];
+// arr.forEach(function(value) {
+//     console.log(value);
+// });
+
 //switch
 
 // let age = 22;
@@ -152,3 +158,25 @@ while(i>0){             //ulti ginti
 //   default:
 //     console.log("Yor are old");
 // }
+
+//mapping
+// const arr = [1,4,6];
+// let a=arr.map((value)=>{
+//     return value+1;
+// })
+// console.log(a);
+
+//filter
+// const arr = [10,4,6,12,9];
+// let a=arr.filter((value)=>{    //returning values less than 8
+//     return value<8;
+// })
+// console.log(a);
+
+//reduce
+
+// const arr = [1,1,2,1,1];
+// let a=arr.reduce((val1 , val2)=>{
+//     return val1 + val2;
+// })
+// console.log(a);
