@@ -14,7 +14,6 @@ let firstName = undefined;
 let selectColor = null;
 */
 
-
 /*Dynamic Language not static 
 during Runtime literal or primitive type can be changed
 let name ='Hammad'; 
@@ -118,7 +117,7 @@ while(i>0){             //ulti ginti
 // let person = {
 //     name:'Hammad',
 //     age:22,
-//     phn_No: 12345-11 
+//     phn_No: 12345-11
 // }
 // for(let key in person){
 //     //console.log(key);     //objects elements without values
@@ -141,30 +140,15 @@ while(i>0){             //ulti ginti
 
 //switch
 
-// let age ;
+// let age = 22;
 
-// switch(age){
-//     case 0:
-//         text = "ON";
+// switch (age) {
+//   case age > 0 && age < 20:
+//     console.log("You are too young");
 //     break;
-//     case 1:
-//         text = "OFF";
+//   case age >= 20 && age <= 40:
+//     console.log("You are young");
 //     break;
-//     default :
-//         text = 'Good luck';        
+//   default:
+//     console.log("Yor are old");
 // }
-
-// console.log(text);   // default will run
-
-
-
-
-
-
-
-
-
-
-
-
-
